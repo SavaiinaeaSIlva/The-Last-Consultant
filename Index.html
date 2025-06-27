@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last Consultant - Empowering Entrepreneurs</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles to use the Poppins font */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000000; /* Pitch black background */
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #f59e0b, #fcd34d); /* Amber to Yellow Gold */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header-font {
+             font-family: 'Poppins', sans-serif;
+             font-weight: 800; /* Extra-bold for impact */
+        }
+        /* Custom styles for the generated content */
+        .generated-content h4 {
+            font-size: 1.125rem; /* text-lg */
+            font-weight: 700;
+            color: #fcd34d; /* yellow-300 */
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .generated-content ul, .generated-content ol {
+            list-style-position: inside;
+            margin-left: 0.5rem;
+        }
+        .generated-content li {
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+<body class="text-gray-200">
+
+    <!-- Header -->
+    <header class="bg-black/70 backdrop-blur-md sticky top-0 z-50 border-b border-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-extrabold text-white header-font">
+                    The Last <span class="text-amber-400">Consultant</span>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-400 hover:text-amber-400 transition duration-300">Services</a>
+                    <a href="#ai-toolkit" class="text-gray-400 hover:text-amber-400 transition duration-300">AI Toolkit</a>
+                    <a href="#about" class="text-gray-400 hover:text-amber-400 transition duration-300">About Me</a>
+                    <a href="#contact" class="text-gray-400 hover:text-amber-400 transition duration-300">Contact</a>
+                </nav>
+                <div class="md:hidden">
+                     <button id="menu-btn" class="text-gray-300 hover:text-amber-400 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+             <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#services" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-900 rounded">Services</a>
+                <a href="#ai-toolkit" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-900 rounded">AI Toolkit</a>
+                <a href="#about" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-900 rounded">About Me</a>
+                <a href="#contact" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-900 rounded">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 md:py-32 bg-black">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4 header-font">
+                    The Last Consultant You'll Ever Need
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                    We empower you with the skills, tools, and confidence to build your business and become your own expert.
+                </p>
+                <a href="#services" class="bg-amber-500 text-white font-semibold py-3 px-8 rounded-lg hover:bg-amber-600 transition duration-300 transform hover:scale-105 shadow-lg shadow-amber-500/20">
+                    Start Your Journey
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold gradient-text">Our Services</h2>
+                    <p class="text-gray-400 mt-2">Tools and knowledge to build your foundation.</p>
+                </div>
+                <div class="flex flex-col items-center gap-10 max-w-2xl mx-auto">
+                    <!-- Service Card 1: LLC Formation -->
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-md border border-gray-800 hover:border-amber-400 hover:shadow-amber-400/10 transition-all duration-300 w-full">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-amber-500/10 p-3 rounded-full mr-4">
+                                <svg class="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">LLC Formation Guidance</h3>
+                        </div>
+                        <p class="text-gray-400">Navigating the process of forming an LLC can be confusing. We don't just do it for you; we walk you through every step, explaining the 'why' behind the 'what'.</p>
+                    </div>
+                    <!-- Service Card 2: Website & Online Presence -->
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-md border border-gray-800 hover:border-amber-400 hover:shadow-amber-400/10 transition-all duration-300 w-full">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-amber-500/10 p-3 rounded-full mr-4">
+                                <svg class="w-8 h-8 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white">DIY Website Building</h3>
+                        </div>
+                        <p class="text-gray-400">A website is your digital storefront. We teach you how to build and manage your own professional website using modern, user-friendly tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI-Powered Toolkit Section -->
+        <section id="ai-toolkit" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold gradient-text">AI-Powered Toolkit</h2>
+                    <p class="text-gray-400 mt-2">Free tools to kickstart your thinking process.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                    <!-- Tool 1: Business Idea Enhancer -->
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-800">
+                        <h3 class="text-2xl font-bold text-white mb-4">✨ Business Idea Enhancer</h3>
+                        <p class="text-gray-400 mb-4">Enter a business idea, and our AI will suggest next steps, potential challenges, and a unique selling point.</p>
+                        <textarea id="idea-input" rows="3" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="e.g., A subscription box for eco-friendly dog toys"></textarea>
+                        <button id="generate-idea-btn" class="bg-amber-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-amber-600 transition duration-300 mt-4 w-full">Generate Analysis</button>
+                        <div id="idea-output" class="mt-6 text-gray-300 generated-content min-h-[150px]"></div>
+                    </div>
+
+                    <!-- Tool 2: Website Headline Generator -->
+                    <div class="bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-800">
+                        <h3 class="text-2xl font-bold text-white mb-4">✨ Website Headline Generator</h3>
+                        <p class="text-gray-400 mb-4">Describe your business, and our AI will craft five catchy headlines for your website.</p>
+                        <textarea id="headline-input" rows="3" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="e.g., We sell handmade leather goods for creative professionals"></textarea>
+                        <button id="generate-headline-btn" class="bg-amber-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-amber-600 transition duration-300 mt-4 w-full">Generate Headlines</button>
+                        <div id="headline-output" class="mt-6 text-gray-300 generated-content min-h-[150px]"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center">
+                         <h2 class="text-3xl md:text-4xl font-bold gradient-text">My Mission: To Make You The Last Consultant You'll Ever Need</h2>
+                         <div class="w-24 h-1 bg-amber-500 mx-auto mt-4 mb-6 rounded"></div>
+                    </div>
+                     <p class="text-lg text-gray-300 mb-6">
+                        In today's world, the tools to build a business or learn a new skill are more accessible than ever, but they're also more complex. Many people get stuck in "analysis paralysis"—worrying about what they can't do instead of taking action. I'm here to break that cycle.
+                     </p>
+                     <p class="text-lg text-gray-300 mb-10">
+                        My consulting practice is built on one principle: <span class="text-amber-400 font-semibold">empowerment</span>. I teach you how to become self-sufficient.
+                     </p>
+                     
+                     <div class="space-y-8">
+                         <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">What I Solve For You:</h3>
+                             <ul class="space-y-4 text-gray-400 list-inside">
+                                 <li class="flex items-start"><span class="text-amber-400 font-bold mr-3 mt-1">&#10003;</span><span><strong class="text-gray-200">End Consultant Dependency:</strong> I'll equip you with the skills and confidence to make critical decisions yourself, saving you money and putting you in control of your own venture.</span></li>
+                                 <li class="flex items-start"><span class="text-amber-400 font-bold mr-3 mt-1">&#10003;</span><span><strong class="text-gray-200">Turn Overwhelm into Action:</strong> We'll cut through the noise and complexity of modern tools, especially AI, so you can stop worrying and start building—today.</span></li>
+                                 <li class="flex items-start"><span class="text-amber-400 font-bold mr-3 mt-1">&#10003;</span><span><strong class="text-gray-200">Build Versatile Skills for Life:</strong> While my focus is on business, the problem-solving mindset we build is universal. Whether you want to launch a startup, learn to code, or master a new skill, I'll provide a framework for success.</span></li>
+                             </ul>
+                         </div>
+
+                         <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">My Areas of Expertise:</h3>
+                             <ul class="space-y-4 text-gray-400 list-inside">
+                                 <li class="flex items-start"><span class="text-amber-400 font-bold mr-3 mt-1">&#10003;</span><span><strong class="text-gray-200">AI Simplification & Troubleshooting:</strong> Making artificial intelligence a practical tool you can use daily.</span></li>
+                                 <li class="flex items-start"><span class="text-amber-400 font-bold mr-3 mt-1">&#10003;</span><span><strong class="text-gray-200">Business Startup Strategy:</strong> Guiding you through the foundational steps of launching your venture.</span></li>
+                                 <li class="flex items-start"><span class="text-amber-400 font-bold mr-3 mt-1">&#10003;</span><span><strong class="text-gray-200">Modern Marketing & Data Analytics:</strong> Using data to make smarter decisions and grow your brand.</span></li>
+                             </ul>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-black">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold gradient-text">Ready to Build?</h2>
+                    <p class="text-gray-400 mt-2">Let's connect and discuss your vision.</p>
+                </div>
+                <div class="max-w-xl mx-auto bg-gray-900 p-8 rounded-xl shadow-lg border border-gray-800">
+                    <!-- Formspree Contact Form -->
+                    <form action="https://formspree.io/f/mkgbpaow" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-300 font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-300 font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-300 font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                             <button type="submit" class="bg-amber-500 text-white font-semibold py-3 px-8 rounded-lg hover:bg-amber-600 transition duration-300 w-full">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 The Last Consultant. All rights reserved.</p>
+            <p class="text-sm text-gray-500 mt-2">Empowering the next generation of entrepreneurs.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // --- Mobile Menu Toggle ---
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Gemini API Integration ---
+        const ideaBtn = document.getElementById('generate-idea-btn');
+        const ideaInput = document.getElementById('idea-input');
+        const ideaOutput = document.getElementById('idea-output');
+        
+        const headlineBtn = document.getElementById('generate-headline-btn');
+        const headlineInput = document.getElementById('headline-input');
+        const headlineOutput = document.getElementById('headline-output');
+
+        const apiKey = ""; // API key is handled by the environment, no need to add one.
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+        // Generic function to call the Gemini API
+        async function callGemini(prompt, buttonElement, outputElement) {
+            buttonElement.disabled = true;
+            buttonElement.textContent = 'Generating...';
+            outputElement.innerHTML = '<p class="text-center">Brewing up some ideas...</p>';
+            
+            try {
+                const payload = {
+                    contents: [{ role: "user", parts: [{ text: prompt }] }]
+                };
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API error: ${response.statusText}`);
+                }
+
+                const result = await response.json();
+                
+                if (result.candidates && result.candidates.length > 0 && result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    // Use innerHTML because the prompt asks for HTML formatted output
+                    outputElement.innerHTML = text; 
+                } else {
+                     throw new Error("No content received from API.");
+                }
+
+            } catch (error) {
+                console.error("Error calling Gemini API:", error);
+                outputElement.innerHTML = `<p class="text-red-400">Sorry, something went wrong. Please try again. ${error.message}</p>`;
+            } finally {
+                buttonElement.disabled = false;
+                 // The button text will be reset based on which button was clicked
+            }
+        }
+
+        // Event Listener for Business Idea Enhancer
+        ideaBtn.addEventListener('click', async () => {
+            const userInput = ideaInput.value;
+            if (!userInput) {
+                ideaOutput.innerHTML = '<p class="text-amber-400">Please enter a business idea first.</p>';
+                return;
+            }
+            const prompt = `You are a helpful business startup consultant. A user has the following business idea: "${userInput}".
+            Analyze this idea and provide a concise analysis in HTML format.
+            Include the following sections with h4 headings:
+            1. <h4>Potential First Steps</h4> (as an ordered list)
+            2. <h4>Key Challenges to Consider</h4> (as an ordered list)
+            3. <h4>Unique Selling Proposition</h4> (as a short paragraph)`;
+            
+            await callGemini(prompt, ideaBtn, ideaOutput);
+            ideaBtn.textContent = 'Generate Analysis';
+        });
+        
+        // Event Listener for Website Headline Generator
+        headlineBtn.addEventListener('click', async () => {
+            const userInput = headlineInput.value;
+            if (!userInput) {
+                headlineOutput.innerHTML = '<p class="text-amber-400">Please describe your business first.</p>';
+                return;
+            }
+            const prompt = `You are an expert marketing copywriter. A user describes their business as: "${userInput}".
+            Generate 5 catchy and professional headlines for their website.
+            Format the output as an HTML ordered list.`;
+
+            await callGemini(prompt, headlineBtn, headlineOutput);
+            headlineBtn.textContent = 'Generate Headlines';
+        });
+
+    </script>
+
+</body>
+</html>
